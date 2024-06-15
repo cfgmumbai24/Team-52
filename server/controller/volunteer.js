@@ -67,6 +67,8 @@ export const addplace = async (req, res) => {
 export const addVolunteer = async (req, res) => {
   const volunteer = req.body;
 
+  console.log(volunteer);
+
   const hashedPassword = await bcrypt.hash(volunteer.password, 12);
 
   if (!volunteer) {

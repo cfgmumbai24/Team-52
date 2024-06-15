@@ -47,8 +47,7 @@ function SignInForm() {
 
     console.log("data", data)
 
-
-
+    navigate("/dashboard");
 
     for (const key in state) {
       setState({
