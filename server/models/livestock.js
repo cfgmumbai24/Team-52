@@ -3,7 +3,7 @@ import Beneficiary from './beneficiary';
 
 const livestockSchema = new mongoose.Schema({
     tag:{
-        type:Number,
+        type:  String,
         required:true
     },
     gender:{
@@ -34,7 +34,7 @@ const livestockSchema = new mongoose.Schema({
     },
     beneficiaryId:{
         type:mongoose.Schema.Types.ObjectId,
-        ref:'Beneficiary',
+        ref:Beneficiary,
         required:true
     }
 

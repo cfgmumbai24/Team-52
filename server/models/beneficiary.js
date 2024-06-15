@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
-
-const Livestock = require('livestock');
+import Livestock from "./livestock"
 
 const beneficiarySchema = new mongoose.Schema({
     name:{
@@ -34,7 +33,7 @@ const beneficiarySchema = new mongoose.Schema({
             required:true
         }
     },
-    livestockOwned:[{type:mongoose.Schema.Types.ObjectId,ref:'Livestock'} ]
+    livestockOwned:[{type:mongoose.Schema.Types.ObjectId,ref: Livestock} ] 
 
     //AADHAR AND RATION CARD YET TO BE ADDED
 

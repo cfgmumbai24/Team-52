@@ -1,8 +1,10 @@
 import mongoose from 'mongoose';
+import Volunteer from './volunteer'
 
 const activitySchema = new mongoose.Schema({
     volunteerId:{
         type:mongoose.Schema.Types.ObjectId,
+        ref: Volunteer,
         required:true
     },
     curDate:{
@@ -11,6 +13,9 @@ const activitySchema = new mongoose.Schema({
     places:{
         type:[String],
         required:true
+    },
+    comment:{
+        type:String
     }
 
     

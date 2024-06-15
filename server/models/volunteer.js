@@ -23,7 +23,6 @@ const volunteerSchema = new mongoose.Schema({
         default:0
     }
 
-    
 })
 
 const Volunteer = mongoose.models.Volunteer || mongoose.model('Volunteer',volunteerSchema);
