@@ -1,12 +1,7 @@
-import dashboard from "./components/dashboard";
+import UpdateBeneficiary from "./components/Addbeneficiary";
 
 function App() {
-  return (
-    <>
-      <dashboard></dashboard>
-
-    </>
-  );
+  return <UpdateBeneficiary></UpdateBeneficiary>;
 }
 
-export default dashboard;
+export default App;
