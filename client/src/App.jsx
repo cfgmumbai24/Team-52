@@ -16,6 +16,10 @@ function App() {
     { Date: '13 Jun', Price: 27 },
   ];
 
+  // const dataDec= Object.assign(dataDec, data);
+// const sortedData = Object.fromEntries(Object.entries(data).sort(([,a],[,b]) => a- b));
+
+
   return (
     <div className="App">
       <h1>Goats Price History</h1>
