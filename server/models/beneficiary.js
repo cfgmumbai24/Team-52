@@ -33,6 +33,10 @@ const beneficiarySchema = new mongoose.Schema({
             required:true
         }
     },
+    address:{
+        type:String,
+        required:true
+    },
     livestockOwned:[{type:mongoose.Schema.Types.ObjectId,ref: Livestock} ] 
 
     //AADHAR AND RATION CARD YET TO BE ADDED

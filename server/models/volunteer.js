@@ -21,6 +21,14 @@ const volunteerSchema = new mongoose.Schema({
     beneficiariesConnected:{
         type:Number,
         default:0
+    },
+    address:{
+        type:String,
+        required:true
+    },
+    phone:{
+        type:Number,
+        required:true
     }
 
 })
