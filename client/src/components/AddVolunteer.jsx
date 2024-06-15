@@ -77,10 +77,10 @@ const AddVolunteer=()=> {
   };
 
   return (
-    <div className="max-w-[900] mx-auto flex flex-col items-center  ">
+    <div className="max-w-[900] mx-auto flex flex-col items-center h-screen justify-center  ">
       {/* changed here added flex flex-col items center */}
       <div>
-        <p className="font-bold mx-8 text-[#0F75BD]  lg:text-5xl md:ext-4xl text-2xl max-w-[1240] items-center justify-center ">
+        <p className=" font-bold mx-8 text-[#0F75BD]  lg:text-5xl md:ext-4xl text-2xl max-w-[1240] items-center justify-center ">
           {" "}
           Add Volunteer
         </p>
@@ -93,7 +93,7 @@ const AddVolunteer=()=> {
 
       <form
         onSubmit={handleSubmit}
-        className="bg-white shadow-md rounded-lg px-8    pt-6 pb-8 my-4 max-w-[1240] "
+        className="bg-white shadow-md rounded-lg px-8 py-5 pt-6 pb-8 my-4 max-w-[1240] "
       >
         <div className="mb-4 flex flex-col  sm:flex-row ">
           <div>
@@ -135,7 +135,7 @@ const AddVolunteer=()=> {
           </div>
           <div>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-2 px-3 md:ml-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="password"
               type="password"
               placeholder="password"
@@ -151,7 +151,7 @@ const AddVolunteer=()=> {
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="phone"
-              type="email"
+              type="number"
               placeholder="Phone"
               value={formValues.phone}
               onChange={handleChange}
@@ -164,7 +164,7 @@ const AddVolunteer=()=> {
           <div>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="Address"
+              id="address"
               type="text"
               placeholder="Address"
               value={formValues.address}
@@ -177,7 +177,7 @@ const AddVolunteer=()=> {
         <div className="mb-4">
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="Taluka"
+            id="taluka"
             type="text"
             placeholder="Taluka"
             value={formValues.taluka}
