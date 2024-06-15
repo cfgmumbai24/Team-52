@@ -4,6 +4,7 @@ import { connectToDB } from "./lib/mongoose.js";
 import Admin from "./models/admin.js";
 import bcrypt from "bcrypt";
 import cors from "cors";
+import volunteerRoute from "./api/volunteer.js";
 
 const app = express();
 app.use(express.urlencoded({ extended: false }));
@@ -11,6 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/api/v1", authRoute);
+app.use("/api/v1/volunteer", volunteerRoute);
 
 async function seedDB() {
   try {

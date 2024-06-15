@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import Volunteer from './volunteer'
+import Volunteer from './volunteer.js';
 
 const activitySchema = new mongoose.Schema({
     volunteerId:{
@@ -8,6 +8,7 @@ const activitySchema = new mongoose.Schema({
         required:true
     },
     curDate:{
+        type:Date,
         default:Date.now
     },
     places:{

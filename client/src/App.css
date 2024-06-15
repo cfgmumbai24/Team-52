@@ -41,20 +41,16 @@
   color: #888;
 } */
 
-
 /*  login css */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 
 /* dropdown css */
-
-
 
 /* login css */
 .App {
   font-family: sans-serif;
   text-align: center;
 }
-
 
 * {
   box-sizing: border-box;
@@ -75,8 +71,6 @@ h1 {
   font-weight: bold;
   margin: 0;
 }
-
-
 
 p {
   font-size: 14px;
@@ -221,8 +215,8 @@ input {
 
 .overlay {
   background: #ff416c;
-  background: -webkit-linear-gradient(to right, #8dc3ea, #0F75BD);
-  background: linear-gradient(to right, #8dc3ea, #0F75BD);
+  background: -webkit-linear-gradient(to right, #8dc3ea, #0f75bd);
+  background: linear-gradient(to right, #8dc3ea, #0f75bd);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -310,4 +304,3 @@ footer a {
   color: #3c97bf;
   text-decoration: none;
 }
-

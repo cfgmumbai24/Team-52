@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../App.css";
 import SignInForm from "./SignIn";
 
-export default function App() {
+export default function Login() {
   const [type, setType] = useState("signIn");
   const handleOnClick = text => {
     if (text !== type) {
@@ -10,8 +10,8 @@ export default function App() {
       return;
     }
   };
-  const containerClass = "container " ;
-    // "container " + (type === "signUp" ? "right-panel-active" : "");
+  const containerClass = "container ";
+  // "container " + (type === "signUp" ? "right-panel-active" : "");
   return (
     <div className="App">
       <div className={containerClass} id="container">
