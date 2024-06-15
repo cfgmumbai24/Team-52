@@ -62,8 +62,6 @@ function SignInForm() {
         </div>
         <br></br>
 
-        
-        <a href="#">Forgot your password?</a>
         <button>Sign In</button>
       </form>
     </div>
