@@ -3,10 +3,12 @@ import authRoute from "./api/auth.js";
 import { connectToDB } from "./lib/mongoose.js";
 import Admin from "./models/admin.js";
 import bcrypt from "bcrypt";
+import cors from "cors";
 
 const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(cors());
 
 app.use("/api/v1", authRoute);
 
@@ -18,6 +20,7 @@ async function seedDB() {
       email: "admin@123.com",
       password: hashedPassword,
     });
+
     console.log(admin);
   } catch (error) {
     console.log(error);
