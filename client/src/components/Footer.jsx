@@ -1,12 +1,13 @@
 import React from "react";
 import Logo from '../assets/eagl-logo.png'
+import mylogo from '../assets/logo.png'
 function Footer(){
  return(
     <div>
-    <div className=" bg-black/70 text-white flex justify-center">
+    <div className=" bg-black/70 text-white pt-6 flex justify-center">
         <div className="w-3/4 grid grid-cols-3 gap-32 ">
             <div className="flex flex-col justify-center items-center ">
-            <img src={Logo} alt="" />
+            <img src={mylogo} alt="" />
             </div>
 
             <div> 
