@@ -36,7 +36,7 @@ async function seedDB() {
 try {
   await connectToDB();
        seedDB();
-//app.use('/api/v1/volunteer',volunteerRoute);
+app.use('/api/v1/volunteer',volunteerRoute);
   app.listen(3000, () => {
     console.log("Server is running on port 3000");
   });

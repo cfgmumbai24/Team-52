@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import Livestock from "./livestock"
 
-const beneficiarySchema = new mongoose.Schema({
+const benificiarySchema = new mongoose.Schema({
     name:{
         type:String,
         required:true
@@ -47,5 +47,5 @@ const beneficiarySchema = new mongoose.Schema({
     
 
 })
-const Beneficiary = mongoose.models.Beneficiary || mongoose.model('Beneficiary',beneficiarySchema);
-export default Beneficiary;
+const Benificiary = mongoose.models.Benificiary || mongoose.model('Benificiary',benificiarySchema);
+export default Benificiary;

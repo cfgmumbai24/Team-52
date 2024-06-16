@@ -3,6 +3,7 @@ import express from 'express';
 import Activity from '../models/activity.js'
 import Volunteer from '../models/volunteer.js';//volunteer is never being used
 import Proposedbenificiary from '../models/proposedbenificiary.js';
+import Livestock from '../models/livestock.js';
 
 export const addbenificiary = async(req,res)=>{
     const beneficiary = req.body;
@@ -22,6 +23,8 @@ export const addbenificiary = async(req,res)=>{
     
 
 }
+//done
+
 
 export const showbeneficiary = async(req,res)=>{
     const {id} = req.params;
@@ -34,16 +37,17 @@ export const showbeneficiary = async(req,res)=>{
         return res.status(400).json('No such beneficiary found');
     }
 }
-
+//done
 export const editbenificiary = async(req,res)=>{
     const {id} = req.params;
-    try{
-    const benificiary = await Beneficiary.findByIdAndUpdate(id,req.body,{runValidators:true,new:true});
-    return res.status(200).json(benificiary);
-    }
-    catch{
-        return res.status(400).json('failed to update');
-    }
+    const {tag} = req.body;
+    
+    
+    //m/f ratio
+    //mortality date
+    //vaccinationStatus
+    //pregnancyStatus
+    
     
 
 }
@@ -51,7 +55,7 @@ export const editbenificiary = async(req,res)=>{
 export const addplace = async(req,res)=>{
     const {place,comment} = req.body;
     const {id} = req.params;
-    const act = Activity.find({date:Date.now,id});
+    const act = Activity.find({date:Date.now(),id});
     if(act){
         act.places.push(place);
     }
@@ -66,10 +70,11 @@ export const addplace = async(req,res)=>{
             return res.status(400).json('Some fault occured')
         }
         else{
-            return res.staus(200).json('rola hai bhai ka');
+            return res.status(200).json('rola hai bhai ka');
             //I have made a very bad return statement here
         }
     }
 
 
 }
+//
