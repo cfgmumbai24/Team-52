@@ -79,6 +79,26 @@ const UpdateBeneficiary = () => {
         <pre>{JSON.stringify(formValues, undefined, 2)}</pre>
       )} */}
 
+      <nav
+        class="navbar bg-body-tertiary"
+        style={{ backgroundColor: "#0F75BD" }}
+      >
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search Volunteer by Name"
+              aria-label="Search"
+              style={{ width: "300px" }}
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+
       <form
         onSubmit={handleSubmit}
         className="bg-white shadow rounded-lg px-8    pt-6 pb-8 my-4 max-w-[1240] "
