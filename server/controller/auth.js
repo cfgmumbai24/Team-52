@@ -49,7 +49,10 @@ export const login = async (req, res) => {
     user.password
   );
 
+  console.log("user",user)
+
   if (!comparePassword) {
+    console.log("password mismatch")
     return res.status(400).send("Invalid credentials");
   }
 
