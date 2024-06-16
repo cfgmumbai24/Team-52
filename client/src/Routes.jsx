@@ -7,6 +7,7 @@ import GoatPrice from "./components/GoatPrice/GoatPrice";
 import ApproveBenificiary from "./components/ApproveBenificiary";
 import UpdateBeneficiary from "./components/UpdateBeneficiary";
 import VolunterDashboard from "./components/VolunteerDashboard";
+import GoatChecklist from "./components/GoatChecklist";
 
 
 const ProjectRoutes = () => {
@@ -35,6 +36,9 @@ const ProjectRoutes = () => {
         },
         {
             path: "/volunteerDashboard", element: <VolunterDashboard />
+        },
+        {
+            path: "/checkAnimalHealth", element: <GoatChecklist />
         }
     ]);
 

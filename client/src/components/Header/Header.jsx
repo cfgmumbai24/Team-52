@@ -20,6 +20,11 @@ const routes = [
         href: "/addVolunteer",
     },
     {
+        label: "Animal Health",
+        access: ["volunteer"],
+        href: "/checkAnimalHealth",
+    },
+    {
         label: "Add Benificiary",
         access: ["volunteer"],
         href: "/addBeneficiary",
