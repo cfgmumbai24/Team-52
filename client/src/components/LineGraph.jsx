@@ -39,7 +39,7 @@ const LineGraph = ({ data }) => {
   };
 
   return (
-    <div>
+    <div className='w-full'>
       <Line data={chartData} options={options} />
     </div>
   );

@@ -82,7 +82,10 @@ const Login = () => {
 
     console.log("data", data)
 
-    navigate("/adminDashboard");
+    if (role === "admin")
+      navigate("/adminDashboard");
+    else
+      navigate("/volunteerDashboard");
 
 
   };

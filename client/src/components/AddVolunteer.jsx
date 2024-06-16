@@ -70,7 +70,7 @@ const AddVolunteer = () => {
   const validate = (values) => {
     const errors = {};
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regular expression for email validation
-    const passwordRegex = /^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[a-zA-Z]).{8,}$/; // Regular expression for password validation
+    //const passwordRegex = /^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[a-zA-Z]).{8,}$/; // Regular expression for password validation
 
     if (!values.firstName) {
       errors.firstName = "First name is required!";
@@ -83,12 +83,12 @@ const AddVolunteer = () => {
     } else if (!emailRegex.test(values.email)) {
       errors.email = "Invalid email address!";
     }
-    if (!values.password) {
-      errors.password = "Password is required!";
-    } else if (!passwordRegex.test(values.password)) {
-      errors.password =
-        "Password must contain at least 8 characters, including uppercase, lowercase letters, and numbers!";
-    }
+    // if (!values.password) {
+    //   errors.password = "Password is required!";
+    // } else if (!passwordRegex.test(values.password)) {
+    //   errors.password =
+    //     "Password must contain at least 8 characters, including uppercase, lowercase letters, and numbers!";
+    // }
     if (!values.phone) {
       errors.phone = "Phone Number is required!";
     }

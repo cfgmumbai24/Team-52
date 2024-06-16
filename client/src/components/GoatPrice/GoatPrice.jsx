@@ -120,7 +120,7 @@ function GoatPrice() {
       <div className='text-3xl text-center  text-[#0F75BD]  m-10 mb-14' >Goats Price Data</div>
       <div className='flex justify-center items-center w-full'>
         <div className='flex gap-8 flex-col  justify-center w-full items-center'>
-          <div >
+          <div className='w-[70%] flex justify-center'>
             <div className='text-xl '>Price History </div>
             <LineGraph data={priceData} />
           </div>
