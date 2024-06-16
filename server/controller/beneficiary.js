@@ -28,3 +28,8 @@ export const proposedBeneficiary = async (req, res) => {
     return res.status(400).json("no data received");
   }
 };
+
+export const getProposedBeneficiary = async (req, res) => {
+  const proposedbeneficiary = await Proposedbenificiary.find();
+  res.status(200).json(proposedbeneficiary);
+};

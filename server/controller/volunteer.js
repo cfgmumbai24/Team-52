@@ -2,7 +2,7 @@ import Activity from "../models/activity.js";
 import Volunteer from "../models/volunteer.js"; //volunteer is never being used
 import Proposedbenificiary from "../models/proposedbenificiary.js";
 import bcrypt from "bcrypt";
-import Beneficiary from "../models/beneficiary.js";
+import Beneficiary from "../models/benificiary.js";
 
 export const addbenificiary = async (req, res) => {
   const beneficiary = req.body;

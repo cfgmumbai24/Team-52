@@ -38,7 +38,10 @@ const proposedbeneficiarySchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-
+  status: {
+    type: Boolean,
+    default: false,
+  },
   //AADHAR AND RATION CARD YET TO BE ADDED
 });
 const Proposedbenificiary =

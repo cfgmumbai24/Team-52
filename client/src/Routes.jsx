@@ -4,6 +4,7 @@ import AddVolunteer from "./components/AddVolunteer";
 import AdminDashboard from "./components/AdminDashboard";
 import AddBeneficiary from "./components/Addbeneficiary";
 import GoatPrice from "./components/GoatPrice/GoatPrice";
+import ApproveBenificiary from "./components/ApproveBenificiary";
 
 
 const ProjectRoutes = () => {
@@ -23,6 +24,9 @@ const ProjectRoutes = () => {
         },
         {
             path: "/price", element: <GoatPrice />
+        },
+        {
+            path: "/approveBenificiary", element: <ApproveBenificiary />
         }
     ]);
 
