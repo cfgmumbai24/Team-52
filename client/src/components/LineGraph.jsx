@@ -30,18 +30,16 @@ const LineGraph = ({ data }) => {
     plugins: {
       title: {
         display: true,
-        text: 'Price',
       },
       legend: {
         display: true,
-        position: 'top',
+        position: 'bottom',
       },
     },
   };
 
   return (
     <div>
-      <h2>Price History</h2>
       <Line data={chartData} options={options} />
     </div>
   );
