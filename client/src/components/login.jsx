@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 // import React, { useState } from "react";
 // import "../styles/login.css"
 // import SignInForm from "./SignIn";
+=======
+import React, { useState } from "react";
+import "../App.css";
+import SignInForm from "./SignIn";
+>>>>>>> 40d5277387b38b50c5cd99e921f1a2de5c266031
 
 // export default function Login() {
 //   const [type, setType] = useState("signIn");
@@ -85,6 +91,7 @@ const Login = () => {
 
 
   };
+<<<<<<< HEAD
 
 
 
@@ -138,6 +145,30 @@ const Login = () => {
               >
                 Forget Password?
               </a>
+=======
+  const containerClass = "container " ;
+    // "container " + (type === "signUp" ? "right-panel-active" : "");
+  return (
+    <div className="App">
+      <div className={containerClass} id="container">
+        <SignInForm />
+        <div className="overlay-container">
+          <div className="overlay">
+            <div className="overlay-panel overlay-left">
+
+              <button
+                className="ghost"
+                id="signIn"
+                onClick={() => handleOnClick("signIn")}
+              >
+                Sign In
+              </button>
+            </div>
+            <div className="overlay-panel overlay-right">
+              <h1>EAGL</h1>
+              <p>Fighting Poverty Together.</p>
+
+>>>>>>> 40d5277387b38b50c5cd99e921f1a2de5c266031
             </div>
           </div>
           <div className="mt-8">

@@ -1,10 +1,9 @@
-import express from "express";
 import Activity from "../models/activity.js";
 import Volunteer from "../models/volunteer.js"; //volunteer is never being used
 import Proposedbenificiary from "../models/proposedbenificiary.js";
 import bcrypt from "bcrypt";
+import Beneficiary from "../models/beneficiary.js";
 
-<<<<<<< HEAD
 export const addbenificiary = async (req, res) => {
   const beneficiary = req.body;
   if (!beneficiary) {
@@ -18,13 +17,6 @@ export const addbenificiary = async (req, res) => {
     return res.status(400).json("no data received");
   }
 };
-=======
-import express from 'express';
-import Activity from '../models/activity.js'
-import Volunteer from '../models/volunteer.js';//volunteer is never being used
-import Proposedbenificiary from '../models/proposedbenificiary.js';
-import Livestock from '../models/livestock.js';
->>>>>>> ed866b6e88af251b59b4a1630617635378df18d9
 
 export const showbeneficiary = async (req, res) => {
   const { id } = req.params;
@@ -36,7 +28,6 @@ export const showbeneficiary = async (req, res) => {
   }
 };
 
-<<<<<<< HEAD
 export const editbenificiary = async (req, res) => {
   const { id } = req.params;
   try {
@@ -69,72 +60,15 @@ export const addplace = async (req, res) => {
     } else {
       return res.staus(200).json("rola hai bhai ka");
       //I have made a very bad return statement here
-=======
-        return res.status(400).json('no data received');
-    }
-   
-    
-
-}
-//done
-
-
-export const showbeneficiary = async(req,res)=>{
-    const {id} = req.params;
-    const product = await Beneficiary.findById(id);
-    if(product){
-        return res.status(200).json(product);
-
-    }
-    else{
-        return res.status(400).json('No such beneficiary found');
-    }
-}
-//done
-export const editbenificiary = async(req,res)=>{
-    const {id} = req.params;
-    const {tag} = req.body;
-    
-    
-    //m/f ratio
-    //mortality date
-    //vaccinationStatus
-    //pregnancyStatus
-    
-    
-
-}
-//this is to be done 
-export const addplace = async(req,res)=>{
-    const {place,comment} = req.body;
-    const {id} = req.params;
-    const act = Activity.find({date:Date.now(),id});
-    if(act){
-        act.places.push(place);
-    }
-    else{
-        const newAct = new Activity({
-            VolunteerId:id,
-            //issue may arise here
-            comment,
-            places:[place]
-        })
-        if(!newAct){
-            return res.status(400).json('Some fault occured')
-        }
-        else{
-            return res.status(200).json('rola hai bhai ka');
-            //I have made a very bad return statement here
-        }
->>>>>>> ed866b6e88af251b59b4a1630617635378df18d9
+      return res.status(400).json("no data received");
     }
   }
+  //
 };
 
 export const addVolunteer = async (req, res) => {
   const volunteer = req.body;
 
-<<<<<<< HEAD
   console.log(volunteer);
 
   const hashedPassword = await bcrypt.hash(volunteer.password, 12);
@@ -157,7 +91,3 @@ export const addVolunteer = async (req, res) => {
     return res.status(400).json("no data received");
   }
 };
-=======
-}
-//
->>>>>>> ed866b6e88af251b59b4a1630617635378df18d9

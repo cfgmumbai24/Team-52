@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import Livestock from "./livestock.js";
 
-const benificiarySchema = new mongoose.Schema({
+const beneficiarySchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -40,7 +40,7 @@ const benificiarySchema = new mongoose.Schema({
 
   //AADHAR AND RATION CARD YET TO BE ADDED
 });
-const Benificiary =
-  mongoose.models.Benificiary ||
-  mongoose.model("Benificiary", benificiarySchema);
-export default Benificiary;
+const Beneficiary =
+  mongoose.models.Beneficiary ||
+  mongoose.model("Beneficiary", beneficiarySchema);
+export default Beneficiary;
