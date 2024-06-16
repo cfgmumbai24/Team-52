@@ -1,14 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ItemList from './ItemList';
 
-// const itemsArray = [
-//   { id: 1, name: 'Item 1', description: 'Description for Item 1' },
-//   { id: 2, name: 'Item 2', description: 'Description for Item 2' },
-//   { id: 3, name: 'Item 3', description: 'Description for Item 3' },
-//   { id: 3, name: 'Item 3', description: 'Description for Item 3' },
-//   { id: 3, name: 'Item 3', description: 'Description for Item 3' }
 
-// ];
 
 function ApproveBenificiary() {
   const [items, setItems] = useState([]);
@@ -26,6 +19,10 @@ function ApproveBenificiary() {
   const handleRemoveItem = (id) => {
     setItems(items.filter(item => item.id !== id));
   };
+
+  if (items.length === 0) return (<h1
+    className='h-screen flex justify-center items-center w-full'
+  >No items to display</h1>);
 
   return (
     <div className="flex justify-center w-full flex-col items-center">

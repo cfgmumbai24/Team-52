@@ -77,6 +77,7 @@ const Login = () => {
 
     const data = await response.json();
     localStorage.setItem("token", data.token);
+    localStorage.setItem("role", role);
 
 
     console.log("data", data)
@@ -148,15 +149,7 @@ const Login = () => {
             </button>
           </div>
 
-          <div className="mt-4 flex items-center w-full text-center">
-            <a
-              href="#"
-              className="text-xs text-gray-500 capitalize text-center w-full"
-            >
-              Don&apos;t have any account yet?
-              <span className="text-blue-700"> Sign Up</span>
-            </a>
-          </div>
+
         </div>
       </div>
     </div >

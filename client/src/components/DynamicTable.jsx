@@ -12,24 +12,28 @@ const DynamicTable = ({ data, maxRows }) => {
 
   return (
     <div class="relative overflow-x-auto">
-    <table class="w-full text-sm text-left rtl:text-right bg-slate-400 text-black dark:text-black">
-      <thead class="text-xs text-black uppercase dark:text-black">
-        <tr>
-          {headers.map((header) => (
-            <th key={header} className='text-center'>{header}</th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        {limitedData.map((row, rowIndex) => (
-          <tr key={rowIndex} className=' text-center'>
-            {headers.map((header) => (
-              <td key={header}>{row[header]}</td>
-            ))}
+      <table class="w-full text-sm text-left rtl:text-right bg-slate-400 text-black dark:text-black">
+        <thead class="text-xs text-black uppercase dark:text-black">
+          <tr>
+
+            <th className='text-center'>Date</th>
+            <th className='text-center'>Price</th>
+            <th className='text-center'>Note</th>
+
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {limitedData.map((row, rowIndex) => (
+            <tr key={rowIndex} className=' text-center'>
+
+              <td key={row._id}>{row.date}</td>
+              <td key={row._id}>{row.price}</td>
+              <td key={row._id}>{row.note}</td>
+
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };

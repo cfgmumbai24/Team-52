@@ -61,7 +61,7 @@ const AddVolunteer = () => {
 
     const data = await response.json();
 
-    navigate("/dashboard")
+    navigate("/adminDashboard")
 
     setIsSubmit(true);
 

@@ -5,6 +5,7 @@ import AdminDashboard from "./components/AdminDashboard";
 import AddBeneficiary from "./components/Addbeneficiary";
 import GoatPrice from "./components/GoatPrice/GoatPrice";
 import ApproveBenificiary from "./components/ApproveBenificiary";
+import UpdateBeneficiary from "./components/UpdateBeneficiary";
 
 
 const ProjectRoutes = () => {
@@ -27,6 +28,9 @@ const ProjectRoutes = () => {
         },
         {
             path: "/approveBenificiary", element: <ApproveBenificiary />
+        },
+        {
+            path: "/updateBeneficiary", element: <UpdateBeneficiary />
         }
     ]);
 

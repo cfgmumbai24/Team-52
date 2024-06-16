@@ -4,38 +4,38 @@ import DynamicTable from '../DynamicTable';
 import LineGraph from '../LineGraph';
 
 function GoatPrice() {
-  const data12 = [
-    { Date: '16/04/2024', Price: 8000 },
-    { Date: '11/04/2024', Price: 7000 },
-    { Date: '8/04/2024', Price: 8000 },
-    { Date: '4/04/2024', Price: 6000 },
-    { Date: '1/04/2024', Price: 4500 },
-    { Date: '28/03/2024', Price: 8500 },
-    { Date: '21/03/2024', Price: 6400 },
-    { Date: '17/03/2024', Price: 7700 },
-    { Date: '1/03/2024', Price: 8000 },
-    { Date: '29/02/2024', Price: 7000 },
-    { Date: '25/02/2024', Price: 8000 },
-    { Date: '14/02/2024', Price: 6300 },
-    { Date: '3/02/2024', Price: 4500 },
-    { Date: '31/01/2024', Price: 8500 },
-    { Date: '20/01/2024', Price: 6400 },
-    { Date: '10/01/2024', Price: 7780 },
-    { Date: '1/01/2024', Price: 8050 },
-    { Date: '26/12/2023', Price: 9000 },
-    { Date: '20/12/2023', Price: 6600 },
-    { Date: '15/12/2023', Price: 6000 },
-    { Date: '4/12/2023', Price: 8000 },
-    { Date: '25/11/2023', Price: 5000 },
-    { Date: '13/11/2023', Price: 8000 },
-    { Date: '2/11/2023', Price: 7500 },
-    { Date: '15/10/2023', Price: 4200 },
-    { Date: '29/09/2023', Price: 6000 },
-    { Date: '20/09/2023', Price: 11000 },
-    { Date: '5/09/2023', Price: 8000 },
+  // const data = [
+  //   { Date: '16/04/2024', Price: 8000 },
+  //   { Date: '11/04/2024', Price: 7000 },
+  //   { Date: '8/04/2024', Price: 8000 },
+  //   { Date: '4/04/2024', Price: 6000 },
+  //   { Date: '1/04/2024', Price: 4500 },
+  //   { Date: '28/03/2024', Price: 8500 },
+  //   { Date: '21/03/2024', Price: 6400 },
+  //   { Date: '17/03/2024', Price: 7700 },
+  //   { Date: '1/03/2024', Price: 8000 },
+  //   { Date: '29/02/2024', Price: 7000 },
+  //   { Date: '25/02/2024', Price: 8000 },
+  //   { Date: '14/02/2024', Price: 6300 },
+  //   { Date: '3/02/2024', Price: 4500 },
+  //   { Date: '31/01/2024', Price: 8500 },
+  //   { Date: '20/01/2024', Price: 6400 },
+  //   { Date: '10/01/2024', Price: 7780 },
+  //   { Date: '1/01/2024', Price: 8050 },
+  //   { Date: '26/12/2023', Price: 9000 },
+  //   { Date: '20/12/2023', Price: 6600 },
+  //   { Date: '15/12/2023', Price: 6000 },
+  //   { Date: '4/12/2023', Price: 8000 },
+  //   { Date: '25/11/2023', Price: 5000 },
+  //   { Date: '13/11/2023', Price: 8000 },
+  //   { Date: '2/11/2023', Price: 7500 },
+  //   { Date: '15/10/2023', Price: 4200 },
+  //   { Date: '29/09/2023', Price: 6000 },
+  //   { Date: '20/09/2023', Price: 11000 },
+  //   { Date: '5/09/2023', Price: 8000 },
 
 
-  ];
+  // ];
 
   const [priceData, setPriceData] = React.useState([]);
   const [price, setPrice] = React.useState(0);
