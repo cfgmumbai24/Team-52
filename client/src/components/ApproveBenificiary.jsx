@@ -10,14 +10,15 @@ function ApproveBenificiary() {
     const fetchData = async () => {
       const response = await fetch('http://localhost:3000/api/v1/proposedbeneficiary');
       const data = await response.json();
-      console.log("proposed benefi", response)
+      console.log("proposed benefi", data)
       setItems(data);
     }
     fetchData();
   }, [])
 
   const handleRemoveItem = (id) => {
-    setItems(items.filter(item => item.id !== id));
+
+    setItems(items.filter(item => item._id !== id));
   };
 
   if (items.length === 0) return (<h1

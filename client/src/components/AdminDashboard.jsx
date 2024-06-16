@@ -11,7 +11,7 @@ const AdminDashboard = () => {
     const navigate = useNavigate();
 
     return (
-        <div className='w-full py-[10rem] px-4 bg-white p-6 justify-center'>
+        <div className='w-full py-[6rem] px-4 bg-white p-6 justify-center'>
             <div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8'>
                 <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'
                     onClick={() => navigate("/addBeneficiary")}

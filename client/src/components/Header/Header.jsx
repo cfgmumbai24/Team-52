@@ -9,6 +9,12 @@ const routes = [
         href: "/adminDashboard",
     },
     {
+        label: "Dashboard",
+        access: ["volunteer"],
+        href: "/volunteerDashboard",
+    },
+
+    {
         label: "Add Volunteer",
         access: ["admin"],
         href: "/addVolunteer",

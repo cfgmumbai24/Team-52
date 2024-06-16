@@ -26,7 +26,7 @@ const DynamicTable = ({ data, maxRows }) => {
           {limitedData.map((row, rowIndex) => (
             <tr key={rowIndex} className=' text-center'>
 
-              <td key={row._id}>{row.date}</td>
+              <td key={row._id}>{row.date.slice(0, 10)}</td>
               <td key={row._id}>{row.price}</td>
               <td key={row._id}>{row.note}</td>
 

@@ -6,6 +6,7 @@ import AddBeneficiary from "./components/Addbeneficiary";
 import GoatPrice from "./components/GoatPrice/GoatPrice";
 import ApproveBenificiary from "./components/ApproveBenificiary";
 import UpdateBeneficiary from "./components/UpdateBeneficiary";
+import VolunterDashboard from "./components/VolunteerDashboard";
 
 
 const ProjectRoutes = () => {
@@ -31,6 +32,9 @@ const ProjectRoutes = () => {
         },
         {
             path: "/updateBeneficiary", element: <UpdateBeneficiary />
+        },
+        {
+            path: "/volunteerDashboard", element: <VolunterDashboard />
         }
     ]);
 

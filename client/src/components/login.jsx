@@ -94,13 +94,16 @@ const Login = () => {
       <div className="flex bg-white rounded-lg shadow-lg border overflow-hidden max-w-sm lg:max-w-4xl w-full">
         <div
           className="hidden md:block lg:w-1/2 bg-cover bg-blue-700"
-        // style={{
-        //   backgroundImage: url("/"),
-        // }}
+
         >
+          <img src="./public/logo.jpg" alt="logo"
+            className="h-full object-cover"
+          />
+
+
         </div>
         <div className="w-full p-8 lg:w-1/2">
-          <p className="text-xl text-gray-600 text-center">Welcome back!</p>
+          <p className="text-xl text-gray-600 text-center">Welcome to Eagle Foundation</p>
           <div className="mt-4">
             <label className="block text-gray-700 text-sm font-bold mb-2">
               Email Address
