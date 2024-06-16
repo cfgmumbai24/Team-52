@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import Livestock from "./livestock.js";
 
 const beneficiarySchema = new mongoose.Schema({
   name: {
@@ -36,7 +35,6 @@ const beneficiarySchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  livestockOwned: [{ type: mongoose.Schema.Types.ObjectId, ref: Livestock }],
 
   //AADHAR AND RATION CARD YET TO BE ADDED
 });

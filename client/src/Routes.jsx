@@ -3,6 +3,7 @@ import Login from "./components/login";
 import AddVolunteer from "./components/AddVolunteer";
 import AdminDashboard from "./components/AdminDashboard";
 import AddBeneficiary from "./components/Addbeneficiary";
+import GoatPrice from "./components/GoatPrice/GoatPrice";
 
 
 const ProjectRoutes = () => {
@@ -19,6 +20,9 @@ const ProjectRoutes = () => {
             path: "/adminDashboard", element: <AdminDashboard />
         }, {
             path: "/addBeneficiary", element: <AddBeneficiary />
+        },
+        {
+            path: "/price", element: <GoatPrice />
         }
     ]);
 

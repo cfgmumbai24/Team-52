@@ -32,7 +32,7 @@ const livestockSchema = new mongoose.Schema({
   },
   benificiaryId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: Benificiary,
+    ref: "Benificiary",
     required: true,
   },
 });

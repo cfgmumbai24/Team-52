@@ -6,6 +6,7 @@ import bcrypt from "bcrypt";
 import cors from "cors";
 import volunteerRoute from "./api/volunteer.js";
 import beneficiaryRoute from "./api/beneficiary.js";
+import adminRoute from "./api/admin.js";
 
 const app = express();
 app.use(express.urlencoded({ extended: false }));
@@ -15,6 +16,7 @@ app.use(cors());
 app.use("/api/v1", authRoute);
 app.use("/api/v1/volunteer", volunteerRoute);
 app.use("/api/v1/proposedbeneficiary", beneficiaryRoute);
+app.use("/api/v1", adminRoute);
 
 async function seedDB() {
   try {
