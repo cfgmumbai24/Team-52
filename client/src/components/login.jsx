@@ -132,7 +132,7 @@ const Login = () => {
             />
             <div
               className="flex justify-between items-center ">
-              <select id="role" name="role" class="block  w-[50%] bg-white text-gray-700 py-1 px-4 pr-4 mt-4 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 border border-black"
+              <select id="role" name="role" className="block  w-[50%] bg-white text-gray-700 py-1 px-4 pr-4 mt-4 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 border border-black"
                 onClick={(e) => setRole(e.target.value)}
               >
                 <option value="volunteer">Volunteer</option>
@@ -149,7 +149,7 @@ const Login = () => {
           </div>
           <div className="mt-8">
             <button className="bg-blue-700 text-white font-bold py-2 px-4 w-full rounded hover:bg-blue-600"
-              onClick={handleOnSubmit}
+              onChange={handleOnSubmit}
             >
               Login
             </button>
